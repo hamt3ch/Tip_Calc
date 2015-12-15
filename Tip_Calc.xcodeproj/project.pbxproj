@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8043ED51C1FCF3900304AF6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8043ED31C1FCF3900304AF6 /* Interface.storyboard */; };
+		A8043ED71C1FCF3900304AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8043ED61C1FCF3900304AF6 /* Assets.xcassets */; };
+		A8043EDE1C1FCF3900304AF6 /* qTip Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A8043EDD1C1FCF3900304AF6 /* qTip Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A8043EE31C1FCF3900304AF6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8043EE21C1FCF3900304AF6 /* InterfaceController.swift */; };
+		A8043EE51C1FCF3900304AF6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8043EE41C1FCF3900304AF6 /* ExtensionDelegate.swift */; };
+		A8043EE71C1FCF3900304AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8043EE61C1FCF3900304AF6 /* Assets.xcassets */; };
+		A8043EEB1C1FCF3900304AF6 /* qTip.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A8043ED11C1FCF3900304AF6 /* qTip.app */; };
+		A8043EF51C1FDA9900304AF6 /* PercentsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8043EF41C1FDA9900304AF6 /* PercentsRow.swift */; };
+		A845FBB21C15E6AB0096FAAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A845FBB11C15E6AB0096FAAC /* AppDelegate.swift */; };
+		A845FBB41C15E6AB0096FAAC /* hmTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A845FBB31C15E6AB0096FAAC /* hmTipViewController.swift */; };
+		A845FBB71C15E6AB0096FAAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A845FBB51C15E6AB0096FAAC /* Main.storyboard */; };
+		A845FBB91C15E6AB0096FAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A845FBB81C15E6AB0096FAAC /* Assets.xcassets */; };
+		A845FBBC1C15E6AB0096FAAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A845FBBA1C15E6AB0096FAAC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8043EDF1C1FCF3900304AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A845FBA61C15E6AB0096FAAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8043EDC1C1FCF3900304AF6;
+			remoteInfo = "qTip Extension";
+		};
+		A8043EE91C1FCF3900304AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A845FBA61C15E6AB0096FAAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8043ED01C1FCF3900304AF6;
+			remoteInfo = qTip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A8043EF11C1FCF3900304AF6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A8043EDE1C1FCF3900304AF6 /* qTip Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8043EF31C1FCF3900304AF6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A8043EEB1C1FCF3900304AF6 /* qTip.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A8043ED11C1FCF3900304AF6 /* qTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8043ED41C1FCF3900304AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A8043ED61C1FCF3900304AF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8043ED81C1FCF3900304AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8043EDD1C1FCF3900304AF6 /* qTip Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "qTip Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8043EE21C1FCF3900304AF6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A8043EE41C1FCF3900304AF6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A8043EE61C1FCF3900304AF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8043EE81C1FCF3900304AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8043EF41C1FDA9900304AF6 /* PercentsRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentsRow.swift; sourceTree = "<group>"; };
+		A845FBAE1C15E6AB0096FAAC /* Tip_Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tip_Calc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A845FBB11C15E6AB0096FAAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A845FBB31C15E6AB0096FAAC /* hmTipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hmTipViewController.swift; sourceTree = "<group>"; };
+		A845FBB61C15E6AB0096FAAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A845FBB81C15E6AB0096FAAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A845FBBB1C15E6AB0096FAAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A845FBBD1C15E6AB0096FAAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8043EDA1C1FCF3900304AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A845FBAB1C15E6AB0096FAAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8043ED21C1FCF3900304AF6 /* qTip */ = {
+			isa = PBXGroup;
+			children = (
+				A8043ED31C1FCF3900304AF6 /* Interface.storyboard */,
+				A8043ED61C1FCF3900304AF6 /* Assets.xcassets */,
+				A8043ED81C1FCF3900304AF6 /* Info.plist */,
+				A8043EF41C1FDA9900304AF6 /* PercentsRow.swift */,
+			);
+			path = qTip;
+			sourceTree = "<group>";
+		};
+		A8043EE11C1FCF3900304AF6 /* qTip Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A8043EE21C1FCF3900304AF6 /* InterfaceController.swift */,
+				A8043EE41C1FCF3900304AF6 /* ExtensionDelegate.swift */,
+				A8043EE61C1FCF3900304AF6 /* Assets.xcassets */,
+				A8043EE81C1FCF3900304AF6 /* Info.plist */,
+			);
+			path = "qTip Extension";
+			sourceTree = "<group>";
+		};
+		A845FBA51C15E6AB0096FAAC = {
+			isa = PBXGroup;
+			children = (
+				A845FBB01C15E6AB0096FAAC /* Tip_Calc */,
+				A8043ED21C1FCF3900304AF6 /* qTip */,
+				A8043EE11C1FCF3900304AF6 /* qTip Extension */,
+				A845FBAF1C15E6AB0096FAAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A845FBAF1C15E6AB0096FAAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A845FBAE1C15E6AB0096FAAC /* Tip_Calc.app */,
+				A8043ED11C1FCF3900304AF6 /* qTip.app */,
+				A8043EDD1C1FCF3900304AF6 /* qTip Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A845FBB01C15E6AB0096FAAC /* Tip_Calc */ = {
+			isa = PBXGroup;
+			children = (
+				A845FBB51C15E6AB0096FAAC /* Main.storyboard */,
+				A845FBB11C15E6AB0096FAAC /* AppDelegate.swift */,
+				A845FBB31C15E6AB0096FAAC /* hmTipViewController.swift */,
+				A845FBBA1C15E6AB0096FAAC /* LaunchScreen.storyboard */,
+				A845FBB81C15E6AB0096FAAC /* Assets.xcassets */,
+				A845FBBD1C15E6AB0096FAAC /* Info.plist */,
+			);
+			path = Tip_Calc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8043ED01C1FCF3900304AF6 /* qTip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8043EF21C1FCF3900304AF6 /* Build configuration list for PBXNativeTarget "qTip" */;
+			buildPhases = (
+				A8043ECF1C1FCF3900304AF6 /* Resources */,
+				A8043EF11C1FCF3900304AF6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8043EE01C1FCF3900304AF6 /* PBXTargetDependency */,
+			);
+			name = qTip;
+			productName = qTip;
+			productReference = A8043ED11C1FCF3900304AF6 /* qTip.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A8043EDC1C1FCF3900304AF6 /* qTip Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8043EF01C1FCF3900304AF6 /* Build configuration list for PBXNativeTarget "qTip Extension" */;
+			buildPhases = (
+				A8043ED91C1FCF3900304AF6 /* Sources */,
+				A8043EDA1C1FCF3900304AF6 /* Frameworks */,
+				A8043EDB1C1FCF3900304AF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "qTip Extension";
+			productName = "qTip Extension";
+			productReference = A8043EDD1C1FCF3900304AF6 /* qTip Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		A845FBAD1C15E6AB0096FAAC /* Tip_Calc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A845FBC01C15E6AB0096FAAC /* Build configuration list for PBXNativeTarget "Tip_Calc" */;
+			buildPhases = (
+				A845FBAA1C15E6AB0096FAAC /* Sources */,
+				A845FBAB1C15E6AB0096FAAC /* Frameworks */,
+				A845FBAC1C15E6AB0096FAAC /* Resources */,
+				A8043EF31C1FCF3900304AF6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8043EEA1C1FCF3900304AF6 /* PBXTargetDependency */,
+			);
+			name = Tip_Calc;
+			productName = Tip_Calc;
+			productReference = A845FBAE1C15E6AB0096FAAC /* Tip_Calc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A845FBA61C15E6AB0096FAAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = HAM;
+				TargetAttributes = {
+					A8043ED01C1FCF3900304AF6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = GDB3SZ2MTH;
+					};
+					A8043EDC1C1FCF3900304AF6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = GDB3SZ2MTH;
+					};
+					A845FBAD1C15E6AB0096FAAC = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = GDB3SZ2MTH;
+					};
+				};
+			};
+			buildConfigurationList = A845FBA91C15E6AB0096FAAC /* Build configuration list for PBXProject "Tip_Calc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A845FBA51C15E6AB0096FAAC;
+			productRefGroup = A845FBAF1C15E6AB0096FAAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A845FBAD1C15E6AB0096FAAC /* Tip_Calc */,
+				A8043ED01C1FCF3900304AF6 /* qTip */,
+				A8043EDC1C1FCF3900304AF6 /* qTip Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8043ECF1C1FCF3900304AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8043ED71C1FCF3900304AF6 /* Assets.xcassets in Resources */,
+				A8043ED51C1FCF3900304AF6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8043EDB1C1FCF3900304AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8043EE71C1FCF3900304AF6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A845FBAC1C15E6AB0096FAAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A845FBBC1C15E6AB0096FAAC /* LaunchScreen.storyboard in Resources */,
+				A845FBB91C15E6AB0096FAAC /* Assets.xcassets in Resources */,
+				A845FBB71C15E6AB0096FAAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8043ED91C1FCF3900304AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8043EE51C1FCF3900304AF6 /* ExtensionDelegate.swift in Sources */,
+				A8043EE31C1FCF3900304AF6 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A845FBAA1C15E6AB0096FAAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A845FBB41C15E6AB0096FAAC /* hmTipViewController.swift in Sources */,
+				A845FBB21C15E6AB0096FAAC /* AppDelegate.swift in Sources */,
+				A8043EF51C1FDA9900304AF6 /* PercentsRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8043EE01C1FCF3900304AF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8043EDC1C1FCF3900304AF6 /* qTip Extension */;
+			targetProxy = A8043EDF1C1FCF3900304AF6 /* PBXContainerItemProxy */;
+		};
+		A8043EEA1C1FCF3900304AF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8043ED01C1FCF3900304AF6 /* qTip */;
+			targetProxy = A8043EE91C1FCF3900304AF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8043ED31C1FCF3900304AF6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8043ED41C1FCF3900304AF6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		A845FBB51C15E6AB0096FAAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A845FBB61C15E6AB0096FAAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A845FBBA1C15E6AB0096FAAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A845FBBB1C15E6AB0096FAAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8043EEC1C1FCF3900304AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = qTip_Extension;
+				INFOPLIST_FILE = qTip/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "HAM.Tip-Calc.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A8043EED1C1FCF3900304AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = qTip_Extension;
+				INFOPLIST_FILE = qTip/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "HAM.Tip-Calc.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A8043EEE1C1FCF3900304AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "qTip Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HAM.Tip-Calc.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A8043EEF1C1FCF3900304AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "qTip Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HAM.Tip-Calc.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A845FBBE1C15E6AB0096FAAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A845FBBF1C15E6AB0096FAAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A845FBC11C15E6AB0096FAAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tip_Calc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HAM.Tip-Calc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A845FBC21C15E6AB0096FAAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tip_Calc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "HAM.Tip-Calc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8043EF01C1FCF3900304AF6 /* Build configuration list for PBXNativeTarget "qTip Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8043EEE1C1FCF3900304AF6 /* Debug */,
+				A8043EEF1C1FCF3900304AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A8043EF21C1FCF3900304AF6 /* Build configuration list for PBXNativeTarget "qTip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8043EEC1C1FCF3900304AF6 /* Debug */,
+				A8043EED1C1FCF3900304AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A845FBA91C15E6AB0096FAAC /* Build configuration list for PBXProject "Tip_Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A845FBBE1C15E6AB0096FAAC /* Debug */,
+				A845FBBF1C15E6AB0096FAAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A845FBC01C15E6AB0096FAAC /* Build configuration list for PBXNativeTarget "Tip_Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A845FBC11C15E6AB0096FAAC /* Debug */,
+				A845FBC21C15E6AB0096FAAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A845FBA61C15E6AB0096FAAC /* Project object */;
+}
