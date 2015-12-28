@@ -33,12 +33,12 @@ class hmTipViewController: UIViewController {
         var percents = percentSlider.value * 0.22
         let selectedPercent = percents
         let billAmount = NSString(string: userInput.text!).doubleValue
-        self.userTempTotal.text = self.userTotal.text
+        self.userTempTotal.text = String(percents*100) + "%"
         
         print(billAmount)
         print(userInput.text)
-        let tip = billAmount * Double(percentSlider.value)
-        let total = billAmount + tip
+        let tip = billAmount * Double(percents)
+        let total = (billAmount + tip) / Double(people[tipPercent.selectedSegmentIndex])
         
         calcTip.text = String(format: "$%.2f", tip)
         userTotal.text = String(format: "$%.2f", total)
@@ -48,5 +48,14 @@ class hmTipViewController: UIViewController {
         view.endEditing(true);
     }
  
+}
+
+extension Double {
+    func asLocaleCurrency() -> String {
+        var formatter = NSNumberFormatter()
+        formatter.numberStyle = .CurrencyStyle
+        formatter.locale = NSLocale.currentLocale()
+        return formatter.stringFromNumber(self)!
+    }
 }
 

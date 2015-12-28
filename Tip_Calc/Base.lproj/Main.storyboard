@@ -99,12 +99,6 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZT-pu-da5">
-                                                <rect key="frame" x="-8" y="38" width="225" height="73"/>
-                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="45"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qd-iM-xdh">
                                                 <rect key="frame" x="0.0" y="7" width="110" height="23"/>
                                                 <constraints>
@@ -115,21 +109,27 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZT-pu-da5">
+                                                <rect key="frame" x="0.0" y="36" width="225" height="73"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="45"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.39940873189594811" green="0.43927237169378996" blue="0.5281649407145057" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="qZT-pu-da5" firstAttribute="top" secondItem="9qd-iM-xdh" secondAttribute="bottom" constant="8" symbolic="YES" id="0Q0-Dh-BdG"/>
+                                            <constraint firstItem="qZT-pu-da5" firstAttribute="top" secondItem="9qd-iM-xdh" secondAttribute="bottom" constant="6" id="0Q0-Dh-BdG"/>
                                             <constraint firstItem="9qd-iM-xdh" firstAttribute="top" secondItem="0OV-Nf-JKH" secondAttribute="top" constant="7" id="3mM-w3-ten"/>
                                             <constraint firstItem="Xby-Tx-hx8" firstAttribute="trailing" secondItem="0OV-Nf-JKH" secondAttribute="trailingMargin" id="3od-RX-sBT"/>
                                             <constraint firstItem="Xby-Tx-hx8" firstAttribute="leading" secondItem="eAY-5M-GMt" secondAttribute="trailing" id="IrK-Gg-WaO"/>
                                             <constraint firstItem="9qd-iM-xdh" firstAttribute="leading" secondItem="0OV-Nf-JKH" secondAttribute="leading" id="K82-he-lHN"/>
-                                            <constraint firstItem="qZT-pu-da5" firstAttribute="trailing" secondItem="Xby-Tx-hx8" secondAttribute="trailing" id="NqT-YG-2GH"/>
-                                            <constraint firstItem="qZT-pu-da5" firstAttribute="top" secondItem="eAY-5M-GMt" secondAttribute="bottom" constant="8" symbolic="YES" id="QMY-aO-MLN"/>
+                                            <constraint firstItem="qZT-pu-da5" firstAttribute="trailing" secondItem="Xby-Tx-hx8" secondAttribute="trailing" constant="8" id="NqT-YG-2GH"/>
+                                            <constraint firstItem="qZT-pu-da5" firstAttribute="top" secondItem="eAY-5M-GMt" secondAttribute="bottom" constant="6" id="QMY-aO-MLN"/>
                                             <constraint firstItem="Xby-Tx-hx8" firstAttribute="baseline" secondItem="9qd-iM-xdh" secondAttribute="baseline" id="bhW-0h-Dcj"/>
-                                            <constraint firstItem="qZT-pu-da5" firstAttribute="leading" secondItem="0OV-Nf-JKH" secondAttribute="leading" constant="-8" id="gAW-3u-C4p"/>
+                                            <constraint firstItem="qZT-pu-da5" firstAttribute="leading" secondItem="0OV-Nf-JKH" secondAttribute="leading" id="gAW-3u-C4p"/>
                                             <constraint firstItem="eAY-5M-GMt" firstAttribute="top" secondItem="0OV-Nf-JKH" secondAttribute="top" constant="5" id="ltI-rd-LYF"/>
                                             <constraint firstItem="Xby-Tx-hx8" firstAttribute="leading" secondItem="9qd-iM-xdh" secondAttribute="trailing" constant="22" id="pDA-OQ-K0V"/>
-                                            <constraint firstAttribute="bottom" secondItem="qZT-pu-da5" secondAttribute="bottom" constant="-2" id="s1c-1E-FZV"/>
+                                            <constraint firstAttribute="bottom" secondItem="qZT-pu-da5" secondAttribute="bottom" id="s1c-1E-FZV"/>
                                             <constraint firstItem="eAY-5M-GMt" firstAttribute="top" secondItem="Xby-Tx-hx8" secondAttribute="top" id="snC-vj-8Fj"/>
                                         </constraints>
                                     </view>
