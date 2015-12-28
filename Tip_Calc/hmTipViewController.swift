@@ -14,7 +14,9 @@ class hmTipViewController: UIViewController {
     @IBOutlet var tipPercent: UISegmentedControl!
     @IBOutlet var userTotal: UILabel!
     @IBOutlet var calcTip: UILabel!
+    @IBOutlet weak var percentSlider: UISlider!
     
+    @IBOutlet weak var userTempTotal: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,11 +29,15 @@ class hmTipViewController: UIViewController {
     
     //UITextField Delegate
     @IBAction func onEditingUserInput(sender: AnyObject) {
-        var percents = [0.15,0.18,0.22]
-        let selectedPercent = percents[tipPercent.selectedSegmentIndex]
+        var people = [1,2,3]
+        var percents = percentSlider.value * 0.22
+        let selectedPercent = percents
         let billAmount = NSString(string: userInput.text!).doubleValue
+        self.userTempTotal.text = self.userTotal.text
         
-        let tip = billAmount * selectedPercent
+        print(billAmount)
+        print(userInput.text)
+        let tip = billAmount * Double(percentSlider.value)
         let total = billAmount + tip
         
         calcTip.text = String(format: "$%.2f", tip)
