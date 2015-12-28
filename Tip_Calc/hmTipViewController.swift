@@ -21,6 +21,10 @@ class hmTipViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        userInput.becomeFirstResponder()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -40,8 +44,11 @@ class hmTipViewController: UIViewController {
         let tip = billAmount * Double(percents)
         let total = (billAmount + tip) / Double(people[tipPercent.selectedSegmentIndex])
         
-        calcTip.text = String(format: "$%.2f", tip)
-        userTotal.text = String(format: "$%.2f", total)
+//        calcTip.text = String(format: "$%.2f", tip.asLocaleCurrency())
+//        userTotal.text = String(format: "$%.2f", total.asLocaleCurrency())
+    
+        calcTip.text = tip.asLocaleCurrency()
+        userTotal.text = total.asLocaleCurrency()
     }
     
     @IBAction func onTap(sender: AnyObject) {
